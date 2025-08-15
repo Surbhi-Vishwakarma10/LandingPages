@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+         *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            /* this considers a acchi practice. */
+        }
+
+        .container{
+            width:100vw;
+            height:100vh;
+            min-height:900px;
+            background: linear-gradient(to right,beige,rgb(160, 160, 226));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            /* padding:10px; */
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            /* gap means between each element there is 10px gap. */
+            background-color: white;
+            width:400px;
+            height:600px;
+            border-radius:10px;
+            align-items: center;
+        }
+
+        .card img{
+            height:30%;
+            width:100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .content{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+        }
+
+        h4{
+            font-size:larger;
+        }
+
+        p{
+            font-weight: 700;
+            text-align: center;
+            padding: 0px 30px;
+        }
+
+        .info{
+            width:80%;
+            height:10%;
+            border-radius: 5px;
+            display: flex;
+            background-color: aquamarine;
+        }
+        
+        .info img{
+            width: 20%;
+            height:90%;
+            border-radius: 50%;
+            gap:5px;
+            padding:6px;
+        }
+        
+        .card .info .fees{
+            padding-top:10px;
+            padding-left:0px;
+        }
+
+
+        button{
+            width:80%;
+            height:7%;
+            background-color: navy;
+            box-shadow: 3px 3px 5px rgba(167, 164, 164, 0.756),3px 3px 5px rgba(167, 164, 164, 0.756);
+            border-radius: 5px;
+            color:white;
+            cursor:pointer;
+        }
+
+        .card .info a{
+            /* text-decoration: none; */
+            color:blue;
+            padding-top:15px;
+            padding-left: 35px;
+            font-size:large;
+        }
+
+        #lastAnchor{
+            text-decoration: none;
+            text-shadow:12px 12px 10px gray;
+            color:black;
+            font-weight: 900;  
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="Modern-Technology.jpg"/>
+            <div class="content">
+                <h4><b>Order Summary</b></h4>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, illo repellat. Voluptates commodi magni ipsa recusandae animi labore.</p>
+            </div>
+            <div class="info">
+                <img src="music logo.jpeg"/>
+                <div class="fees">
+                    <p>Annual Plan</p>
+                    <p>$99.9/year</p>
+                </div>
+
+                <a href="#" >change</a>
+
+                
+            </div>
+
+            <button>Proceed to Payment</button>
+
+            <a id="lastAnchor" href="#"> Cancel Order </a>
+        </div>
+    </div>
+</body>
+</html>
